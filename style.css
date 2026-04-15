@@ -1,11 +1,15 @@
 /* HERO HEADER */
 .hero {
-    height: 300px;
-    background: url("assets/header.png") center/cover no-repeat;
+    height: 350px;
+
+    background-image: url("./assets/header.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
 }
 
 .overlay {
