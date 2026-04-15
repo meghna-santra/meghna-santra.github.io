@@ -77,6 +77,33 @@ section {
     box-shadow: 0 0 15px rgba(88, 166, 255, 0.6);
 }
 
+/* ABOUT SECTION LAYOUT */
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* TEXT SIDE */
+.about-text {
+    flex: 1;
+}
+
+/* IMAGE SIDE */
+.about-image {
+    flex: 0.4;
+    display: flex;
+    justify-content: center;
+}
+
+.about-image img {
+    width: 250px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(88, 166, 255, 0.3);
+}
+
 
 /* NAV LINKS */
 
