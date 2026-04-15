@@ -53,7 +53,8 @@ body {
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
-    background: #d1d1d6;
+    background: rgba(209, 209, 214, 0.9);
+    backdrop-filter: blur(6px);
     color: #111;
     transition: all 0.3s ease;
 }
