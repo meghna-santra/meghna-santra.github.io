@@ -1,3 +1,17 @@
+/* GLOBAL FONT */
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 40px;
+    background-color: #0d1117;
+    color: #c9d1d9;
+}
+
+/* Ensure all elements inherit the font */
+* {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+
 /* HERO HEADER */
 .hero {
     height: 350px;
@@ -18,6 +32,7 @@
     border-radius: 12px;
     text-align: center;
 }
+
 
 /* NAV BUTTONS */
 .nav-buttons {
@@ -51,6 +66,8 @@
     box-shadow: 0 0 15px rgba(88, 166, 255, 0.6);
 }
 
+
+/* NAV LINKS */
 nav {
     display: flex;
     justify-content: center;
@@ -68,13 +85,8 @@ nav a:hover {
     color: #58a6ff;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 40px;
-    background-color: #0d1117;
-    color: #c9d1d9;
-}
 
+/* HEADINGS */
 h1 {
     text-align: center;
 }
@@ -84,6 +96,8 @@ h2 {
     padding-bottom: 5px;
 }
 
+
+/* PROJECTS */
 .project {
     margin-bottom: 25px;
 }
