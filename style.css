@@ -1,9 +1,14 @@
 /* GLOBAL FONT */
 body {
     font-family: 'Space Grotesk', sans-serif;
-    margin: 40px;
+    margin: 0; /* FIX */
+    padding: 0;
     background-color: #0d1117;
     color: #c9d1d9;
+}
+
+section {
+    padding: 40px;
 }
 
 /* Ensure all elements inherit the font */
@@ -73,12 +78,6 @@ body {
 
 
 /* NAV LINKS */
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 40px;
-}
 
 nav a {
     text-decoration: none;
