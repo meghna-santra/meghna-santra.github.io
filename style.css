@@ -22,13 +22,8 @@ body {
     color: #c9d1d9;
 }
 
-header {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
 h1 {
-    font-size: 2.5em;
+    text-align: center;
 }
 
 h2 {
@@ -37,5 +32,5 @@ h2 {
 }
 
 .project {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
