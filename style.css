@@ -4,9 +4,13 @@ body {
     font-size: 1rem;
     line-height: 1.5;
     margin: 0; /* FIX */
-    padding: 0;
     background-color: #0d1117;
     color: #c9d1d9;
+}
+
+/* Add proper page margins */
+main {
+    padding: 40px 80px;   /* ← left/right margins restored */
 }
 
 section {
