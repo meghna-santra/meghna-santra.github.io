@@ -2,6 +2,7 @@
 body {
     font-family: 'Space Grotesk', sans-serif;
     font-size: 1rem;
+    line-height: 1.5;
     margin: 0; /* FIX */
     padding: 0;
     background-color: #0d1117;
@@ -118,4 +119,13 @@ h5 {
 /* PROJECTS */
 .project {
     margin-bottom: 25px;
+}
+
+p, li {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+li {
+    margin-bottom: 6px;
 }
