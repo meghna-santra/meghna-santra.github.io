@@ -94,14 +94,19 @@ nav a:hover {
 
 /* HEADINGS */
 h1 {
+    font-size: 2rem;
     text-align: center;
 }
 
 h2 {
+    font-size: 1.3rem;
     border-bottom: 1px solid #30363d;
     padding-bottom: 5px;
 }
 
+h3 {
+    font-size: 1.1rem;
+}
 
 /* PROJECTS */
 .project {
