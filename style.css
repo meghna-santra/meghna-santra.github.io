@@ -99,13 +99,21 @@ h1 {
 }
 
 h2 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     border-bottom: 1px solid #30363d;
     padding-bottom: 5px;
 }
 
 h3 {
+    font-size: 1.25rem;
+}
+
+h4 {
     font-size: 1.1rem;
+}
+
+h5 {
+    font-size: 1.0rem;
 }
 
 /* PROJECTS */
