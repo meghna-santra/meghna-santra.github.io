@@ -249,21 +249,18 @@ li {
 /* TIMELINE */
 .timeline {
     position: relative;
-    margin-left: 10px;
-    padding-left: 30px;
+    padding-left: 30px; 
 }
 
 /* vertical line */
 .timeline::before {
     content: "";
     position: absolute;
-    left: 10px;
+    left: 0;              /* anchor from container edge */
     top: 0;
     width: 2px;
     height: 100%;
     background: #30363d;
-
-    transform: translateX(-50%);
 }
 
 /* each item */
@@ -275,15 +272,15 @@ li {
 /* dot */
 .timeline-dot {
     position: absolute;
-    left: 10px;
-    top: 5px;
+    left: 0;              /* same anchor as line */
+    top: 6px;
+
     width: 10px;
     height: 10px;
     background: #58a6ff;
     border-radius: 50%;
-    box-shadow: 0 0 8px rgba(88, 166, 255, 0.8);
 
-    transform: translateX(-50%);
+    transform: translateX(-4px);
 }
 
 .timeline-content {
