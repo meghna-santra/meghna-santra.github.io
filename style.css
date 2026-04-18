@@ -282,6 +282,14 @@ li {
         max-width: 90%;
     }
 
+    .timeline {
+        padding-left: 20px;   /* reduce from 30px */
+    }
+
+    .edu-title {
+        margin-left: 5px;     /* slight breathing room */
+    }
+    
     /* Text */
     p, li {
         font-size: 0.9rem;
