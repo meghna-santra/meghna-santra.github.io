@@ -159,6 +159,15 @@ h5 {
     margin-bottom: 25px;
 }
 
+.project h4 a {
+    color: inherit;          /* keeps same text color */
+    text-decoration: none;   /* removes underline */
+}
+
+.project h4 a:hover {
+    color: #58a6ff;         /* nice hover effect */
+}
+
 p, li {
     font-size: 0.95rem;
     line-height: 1.5;
@@ -296,7 +305,7 @@ li {
     
     /* Text */
     p, li {
-        font-size: 0.9rem;
+        font-size: 1rem;
         line-height: 1.5;
     }
 }
