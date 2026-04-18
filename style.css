@@ -3,9 +3,9 @@ body {
     font-family: 'Space Grotesk', sans-serif;
     font-size: 1rem;
     line-height: 1.5;
-    margin: 0; /* FIX */
-    background-color: #0d1117;
-    color: #c9d1d9;
+    margin: 0;
+    background-color: #ffffff;   /* was dark */
+    color: #111111;              /* was light */
 }
 
 /* Add proper page margins */
@@ -86,8 +86,8 @@ section {
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
-    background: rgba(209, 209, 214, 0.9);
     backdrop-filter: blur(6px);
+    background: #f1f5f9;
     color: #111;
     transition: all 0.3s ease;
 }
@@ -99,7 +99,7 @@ section {
 }
 
 .btn.active {
-    background: #0d1117;
+    background: #111;
     color: white;
     box-shadow: 0 0 15px rgba(88, 166, 255, 0.6);
 }
@@ -137,25 +137,23 @@ nav a:hover {
 
 /* HEADINGS */
 h1 {
-    font-size: 3.5rem;      /* bigger */
-    font-weight: 700;     /* bold */
+    font-size: 3.5rem;
+    font-weight: 700;
     text-align: center;
-    color: white;
+    color: #111111;   /* black instead of white */
 }
 
 .overlay p {
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: #c9d1d9;
+    color: #444;      /* softer dark */
 }
 
 h1, .overlay p {
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+    text-shadow: none;
 }
 
 h2 {
     font-size: 1.5rem;
-    border-bottom: 1px solid #30363d;
+    border-bottom: 1px solid #e5e7eb;
     padding-bottom: 5px;
 }
 
@@ -213,14 +211,15 @@ li {
 .contact-item svg {
     width: 20px;
     height: 20px;
-    color: #ffffff;
+    color: #111111;
+    fill: #111111;
     flex-shrink: 0;
 }
 
 .icon {
     width: 20px;
     height: 20px;
-    fill: #ffffff;   /* applies to all SVG icons */
+    fill: #111111;   /* applies to all SVG icons */
 }
     
 /* links */
@@ -234,7 +233,7 @@ li {
     text-decoration: underline;
 }
 
-    .contact-item:hover svg {
+.contact-item:hover svg {
     color: #58a6ff;
     fill: #58a6ff;
 }
@@ -313,9 +312,9 @@ li {
     text-align: center;
     padding: 20px 0;
     margin-top: 40px;
-    border-top: 1px solid #30363d;
+    border-top: 1px solid #e5e7eb;
+    color: #555
     font-size: 0.9rem;
-    color: #8b949e;
 
     display: flex;
     justify-content: center;   /* ensures true centering */
