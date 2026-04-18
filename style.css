@@ -274,6 +274,20 @@ li {
     white-space: nowrap;   /* prevents wrapping */
 }
 
+/* ALL LINKS RESET */
+a {
+    color: inherit;          /* use parent color */
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;          /* removes purple visited */
+}
+
+a:hover {
+    color: #58a6ff;
+}
+
 /* MOBILE RESPONSIVENESS */
 @media (max-width: 768px) {
 
