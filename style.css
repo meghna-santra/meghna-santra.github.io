@@ -233,7 +233,7 @@ li {
 /* TIMELINE */
 .timeline {
     position: relative;
-    padding-left: 10px; 
+    padding-left: 0px; 
 }
 
 
@@ -241,7 +241,7 @@ li {
 .timeline-item {
     position: relative;
     margin-bottom: 20px;
-    padding-left: 0px;
+    padding-left: 20px;
 }
 
 /* dot */
@@ -277,7 +277,7 @@ li {
 .contact a,
 .cv-link a,
 .project h4 a {
-    color: #c9d1d9;
+    color: #58a6ff;
     text-decoration: underline;
     text-underline-offset: 3px;
 }
@@ -285,7 +285,7 @@ li {
 .contact a:visited,
 .cv-link a:visited,
 .project h4 a:visited {
-    color: #c9d1d9;
+    color: #58a6ff;
 }
 
 .contact a:hover,
