@@ -246,6 +246,10 @@ li {
         padding: 40px 0;
     }
 
+    .section-title {
+        text-align: center;
+    }
+
     /* Hero */
     .overlay {
         padding: 20px;
@@ -254,10 +258,6 @@ li {
 
     h1 {
         font-size: 2rem;
-    }
-
-    h2 {
-        text-align: center;
     }
     
     /* Nav buttons */
