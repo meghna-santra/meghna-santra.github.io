@@ -179,7 +179,7 @@ li {
     }
 
     .about-image img {
-        width: 180px;
+        width: 200px;
     }
 
     .nav-buttons {
@@ -207,7 +207,7 @@ li {
     }
 
     h1 {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     /* NAV BUTTONS → make horizontal */
