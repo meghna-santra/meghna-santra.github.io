@@ -176,18 +176,19 @@ li {
 /* TIMELINE */
 .timeline {
     position: relative;
-    padding-left: 30px; 
+    padding-left: 35px; 
 }
 
 /* vertical line */
 .timeline::before {
     content: "";
     position: absolute;
-    left: 0;              /* anchor from container edge */
+    left: 10px;              /* center reference */
     top: 0;
     width: 2px;
     height: 100%;
     background: #30363d;
+    transform: translateX(-50%);
 }
 
 /* each item */
@@ -199,7 +200,7 @@ li {
 /* dot */
 .timeline-dot {
     position: absolute;
-    left: 0;              /* same anchor as line */
+    left: 10px;              /* SAME reference */
     top: 6px;
 
     width: 10px;
@@ -207,7 +208,7 @@ li {
     background: #58a6ff;
     border-radius: 50%;
 
-    transform: translateX(-5px);
+    transform: translateX(-50%); 
 }
 
 .timeline-content {
