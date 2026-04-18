@@ -241,13 +241,13 @@ li {
 .timeline-item {
     position: relative;
     margin-bottom: 20px;
-    padding-left: 15px;
+    padding-left: 20px;
 }
 
 /* dot */
 .timeline-dot {
     position: absolute;
-    left: 0;
+    left: 20px;
     top: 8px;
 
     width: 10px;
@@ -278,7 +278,8 @@ li {
 .cv-link a,
 .project h4 a {
     color: #c9d1d9;
-    text-decoration: none;
+    text-decoration: underline;
+    text-underline-offset: 3px;
 }
 
 .contact a:visited,
@@ -290,7 +291,7 @@ li {
 .contact a:hover,
 .cv-link a:hover,
 .project h4 a:hover {
-    color: #58a6ff;
+    color: #79c0ff;
 }
 
 /* MOBILE RESPONSIVENESS */
