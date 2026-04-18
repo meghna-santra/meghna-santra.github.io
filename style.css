@@ -256,7 +256,7 @@ li {
 .timeline::before {
     content: "";
     position: absolute;
-    left: 8px;
+    left: 10px;
     top: 0;
     width: 2px;
     height: 100%;
@@ -272,13 +272,14 @@ li {
 /* dot */
 .timeline-dot {
     position: absolute;
-    left: -2px;
+    left: 10px;
     top: 6px;
     width: 10px;
     height: 10px;
     background: #58a6ff;
     border-radius: 50%;
     box-shadow: 0 0 8px rgba(88, 166, 255, 0.8);
+    transform: translateX(-50%);
 }
 
 /* text */
