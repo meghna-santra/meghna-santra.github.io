@@ -210,12 +210,12 @@ li {
 }
 
 /* icon */
-/* .contact-item svg {
+.contact-item svg {
     width: 20px;
     height: 20px;
     color: white;   
     fill: white;
-    flex-shrink: 0;  */
+    flex-shrink: 0;
 
 /* links */
 .contact a {
@@ -228,10 +228,10 @@ li {
     text-decoration: underline;
 }
 
-/* .contact-item:hover svg {
+    .contact-item:hover svg {
     color: #58a6ff;
     fill: #58a6ff;
-} */
+}
 
 /* EDUCATION BLOCK */
 .edu-title {
