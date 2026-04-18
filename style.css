@@ -177,8 +177,8 @@ h5 {
 }
 
 .project h4 a {
-    color: inherit;          /* keeps same text color */
-    text-decoration: none;   /* removes underline */
+    color: #58a6ff;          /* keeps same text color */
+    text-decoration: underline;   /* removes underline */
 }
 
 .project h4 a:hover {
@@ -224,7 +224,7 @@ li {
 }
 
 .contact a:hover {
-    color: #58a6ff;
+    color: #79c0ff;
     text-decoration: underline;
 }
 
@@ -352,11 +352,11 @@ li {
     }
 
     .timeline {
-        padding-left: 20px;   /* reduce from 30px */
+        padding-left: 0px;   /* reduce from 30px */
     }
 
     .edu-title {
-        margin-left: px;     /* slight breathing room */
+        margin-left: 5px;     /* slight breathing room */
     }
 
     .about-text {
