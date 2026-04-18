@@ -213,7 +213,8 @@ li {
 .contact-item svg {
     width: 20px;
     height: 20px;
-    color: #58a6ff;
+    color: white;   /* Lucide */
+    fill: white;
     flex-shrink: 0;   /* prevents icon shrinking */
 }
 
@@ -228,6 +229,10 @@ li {
     text-decoration: underline;
 }
 
+.contact-item:hover svg {
+    color: #58a6ff;
+    fill: #58a6ff;
+}
 
 /* EDUCATION BLOCK */
 .edu-title {
