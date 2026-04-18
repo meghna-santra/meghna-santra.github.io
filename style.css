@@ -261,6 +261,8 @@ li {
     width: 2px;
     height: 100%;
     background: #30363d;
+
+    transform: translateX(-50%);
 }
 
 /* each item */
@@ -273,13 +275,21 @@ li {
 .timeline-dot {
     position: absolute;
     left: 10px;
-    top: 6px;
+    top: 5px;
     width: 10px;
     height: 10px;
     background: #58a6ff;
     border-radius: 50%;
     box-shadow: 0 0 8px rgba(88, 166, 255, 0.8);
+
     transform: translateX(-50%);
+}
+
+.timeline-content {
+    display: flex;
+    justify-content: space-between;   /* pushes year to right */
+    align-items: center;
+    gap: 20px;
 }
 
 /* text */
@@ -287,9 +297,13 @@ li {
     margin: 0;
 }
 
+.degree {
+    font-weight: 500;
+}
+
 /* year highlight */
 .year {
     color: #58a6ff;
     font-weight: 600;
-    margin-left: 6px;
+    white-space: nowrap;   /* prevents wrapping */
 }
