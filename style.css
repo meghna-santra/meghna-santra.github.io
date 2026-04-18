@@ -213,10 +213,15 @@ li {
 .contact-item svg {
     width: 20px;
     height: 20px;
-    color: white;   
-    fill: white;
+    color: #ffffff;
     flex-shrink: 0;
 
+.icon {
+    width: 20px;
+    height: 20px;
+    fill: #ffffff;   /* applies to all SVG icons */
+}
+    
 /* links */
 .contact a {
     color: #58a6ff;
