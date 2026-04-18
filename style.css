@@ -168,6 +168,71 @@ li {
     margin-bottom: 6px;
 }
 
+/* EDUCATION BLOCK */
+.edu-title {
+    margin-bottom: 20px;
+}
+
+/* TIMELINE */
+.timeline {
+    position: relative;
+    padding-left: 30px; 
+}
+
+/* vertical line */
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 0;              /* anchor from container edge */
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: #30363d;
+}
+
+/* each item */
+.timeline-item {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+/* dot */
+.timeline-dot {
+    position: absolute;
+    left: 0;              /* same anchor as line */
+    top: 6px;
+
+    width: 10px;
+    height: 10px;
+    background: #58a6ff;
+    border-radius: 50%;
+
+    transform: translateX(-5px);
+}
+
+.timeline-content {
+    display: flex;
+    justify-content: space-between;   /* pushes year to right */
+    align-items: center;
+    gap: 20px;
+}
+
+/* text */
+.timeline-content p {
+    margin: 0;
+}
+
+.degree {
+    font-weight: 500;
+}
+
+/* year highlight */
+.year {
+    color: #58a6ff;
+    font-weight: 600;
+    white-space: nowrap;   /* prevents wrapping */
+}
+
 /* MOBILE RESPONSIVENESS */
 @media (max-width: 768px) {
 
@@ -239,69 +304,4 @@ li {
     h1 {
         font-size: 1.6rem;
     }
-}
-
-/* EDUCATION BLOCK */
-.edu-title {
-    margin-bottom: 20px;
-}
-
-/* TIMELINE */
-.timeline {
-    position: relative;
-    padding-left: 30px; 
-}
-
-/* vertical line */
-.timeline::before {
-    content: "";
-    position: absolute;
-    left: 0;              /* anchor from container edge */
-    top: 0;
-    width: 2px;
-    height: 100%;
-    background: #30363d;
-}
-
-/* each item */
-.timeline-item {
-    position: relative;
-    margin-bottom: 25px;
-}
-
-/* dot */
-.timeline-dot {
-    position: absolute;
-    left: 0;              /* same anchor as line */
-    top: 6px;
-
-    width: 10px;
-    height: 10px;
-    background: #58a6ff;
-    border-radius: 50%;
-
-    transform: translateX(-4px);
-}
-
-.timeline-content {
-    display: flex;
-    justify-content: space-between;   /* pushes year to right */
-    align-items: center;
-    gap: 20px;
-}
-
-/* text */
-.timeline-content p {
-    margin: 0;
-}
-
-.degree {
-    font-weight: 500;
-}
-
-/* year highlight */
-.year {
-    color: #58a6ff;
-    font-weight: 600;
-    white-space: nowrap;   /* prevents wrapping */
 }
