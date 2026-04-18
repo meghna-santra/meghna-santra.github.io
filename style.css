@@ -177,6 +177,37 @@ li {
     margin-bottom: 6px;
 }
 
+/* CONTACT SECTION */
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* each row */
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+}
+
+/* icons */
+.icon {
+    font-size: 1.2rem;
+}
+
+/* links */
+.contact a {
+    color: #c9d1d9;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    color: #58a6ff;
+}
+
+
 /* EDUCATION BLOCK */
 .edu-title {
     margin-bottom: 20px;
