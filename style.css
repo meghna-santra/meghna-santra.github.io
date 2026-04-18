@@ -112,7 +112,7 @@ section {
 
 /* style link */
 .cv-link a {
-    color: #58a6ff;
+    color: #3b82f6;
     text-decoration: none;
     font-weight: 500;
 }
@@ -131,7 +131,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #58a6ff;
+    color: #3b82f6;
 }
 
 
@@ -175,12 +175,12 @@ h5 {
 }
 
 .project h4 a {
-    color: #58a6ff;          /* keeps same text color */
+    color: #3b82f6;          /* keeps same text color */
     text-decoration: underline;   /* removes underline */
 }
 
 .project h4 a:hover {
-    color: #58a6ff;         /* nice hover effect */
+    color: #3b82f6;         /* nice hover effect */
 }
 
 p, li {
@@ -224,7 +224,7 @@ li {
     
 /* links */
 .contact a {
-    color: #58a6ff;
+    color: #3b82f6;
     text-decoration: none;
 }
 
@@ -234,8 +234,8 @@ li {
 }
 
 .contact-item:hover svg {
-    color: #58a6ff;
-    fill: #58a6ff;
+    color: #3b82f6;
+    fill: #3b82f6;
 }
 
 /* EDUCATION BLOCK */
@@ -265,9 +265,8 @@ li {
 
     width: 10px;
     height: 10px;
-    background: #58a6ff;
+    background: #3b82f6;
     border-radius: 50%;
-    box-shadow: 0 0 8px rgba(88, 166, 255, 0.8);
 }
 
 /* text */
@@ -281,7 +280,7 @@ li {
 
 /* year highlight */
 .year {
-    color: #58a6ff;
+    color: #3b82f6;
     font-weight: 600;
     margin-left: 6px;
 }
@@ -290,7 +289,7 @@ li {
 .contact a,
 .cv-link a,
 .project h4 a {
-    color: #58a6ff;
+    color: #3b82f6;
     text-decoration: underline;
     text-underline-offset: 3px;
 }
@@ -298,7 +297,7 @@ li {
 .contact a:visited,
 .cv-link a:visited,
 .project h4 a:visited {
-    color: #58a6ff;
+    color: #3b82f6;
 }
 
 .contact a:hover,
