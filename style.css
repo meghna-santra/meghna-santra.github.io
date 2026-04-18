@@ -364,6 +364,19 @@ a:hover {
     .edu-title {
         margin-left: px;     /* slight breathing room */
     }
+
+    .cv-link {
+        order: 3;   /* pushes it BELOW image */
+        text-align: center;
+    }
+
+    .about-text {
+        order: 1;
+    }
+
+    .about-image {
+        order: 2;
+    }
     
     /* Text */
     p, li {
