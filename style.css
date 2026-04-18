@@ -240,49 +240,55 @@ li {
     }
 }
 
-/* ===== EDUCATION TIMELINE ===== */
+/* EDUCATION BLOCK */
+.edu-title {
+    margin-bottom: 20px;
+}
+
+/* TIMELINE */
 .timeline {
     position: relative;
-    margin-left: 20px;
+    margin-left: 10px;
     padding-left: 30px;
 }
 
+/* vertical line */
 .timeline::before {
     content: "";
     position: absolute;
-    left: 10px;
+    left: 8px;
     top: 0;
     width: 2px;
     height: 100%;
     background: #30363d;
 }
 
+/* each item */
 .timeline-item {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
+/* dot */
 .timeline-dot {
     position: absolute;
     left: -2px;
-    top: 5px;
-    width: 12px;
-    height: 12px;
+    top: 6px;
+    width: 10px;
+    height: 10px;
     background: #58a6ff;
     border-radius: 50%;
     box-shadow: 0 0 8px rgba(88, 166, 255, 0.8);
 }
 
-.timeline-content h3 {
-    margin: 0;
-    font-size: 1.2rem;
-}
-
+/* text */
 .timeline-content p {
-    margin: 5px 0 0;
+    margin: 0;
 }
 
+/* year highlight */
 .year {
     color: #58a6ff;
     font-weight: 600;
+    margin-left: 6px;
 }
