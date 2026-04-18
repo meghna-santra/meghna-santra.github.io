@@ -239,3 +239,50 @@ li {
         font-size: 0.9rem;
     }
 }
+
+/* ===== EDUCATION TIMELINE ===== */
+.timeline {
+    position: relative;
+    margin-left: 20px;
+    padding-left: 30px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: #30363d;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -2px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background: #58a6ff;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(88, 166, 255, 0.8);
+}
+
+.timeline-content h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.timeline-content p {
+    margin: 5px 0 0;
+}
+
+.year {
+    color: #58a6ff;
+    font-weight: 600;
+}
