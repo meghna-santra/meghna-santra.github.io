@@ -216,7 +216,6 @@ li {
     width: 20px;
     height: 20px;
     stroke: #111111;   /* black stroke */
-    fill: none;
     flex-shrink: 0;
 }
 
