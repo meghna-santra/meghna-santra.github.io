@@ -104,6 +104,23 @@ section {
     box-shadow: 0 0 15px rgba(88, 166, 255, 0.6);
 }
 
+/* CV LINK */
+.cv-link {
+    margin-top: 20px;
+    font-size: 0.95rem;
+}
+
+/* style link */
+.cv-link a {
+    color: #58a6ff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.cv-link a:hover {
+    text-decoration: underline;
+}
+
 
 /* NAV LINKS */
 
