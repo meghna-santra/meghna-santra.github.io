@@ -321,6 +321,11 @@ li {
     justify-content: center;   /* ensures true centering */
 }
 
+.footer p {
+    margin: 0;
+    opacity: 0.8;
+}
+
 /* MOBILE RESPONSIVENESS */
 @media (max-width: 768px) {
 
