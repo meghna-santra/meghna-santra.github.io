@@ -98,6 +98,7 @@ section {
     justify-content: center;
     align-items: center;
     text-align: center;
+    white-space: nowrap;
 }
 
 .btn:hover {
