@@ -402,11 +402,11 @@ li {
     }
 
     .about-text {
-        order: 1;
+        order: 2;
     }
 
     .about-image {
-        order: 2;
+        order: 1;
     }
 
     .cv-link {
