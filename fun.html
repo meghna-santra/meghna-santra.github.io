@@ -33,24 +33,24 @@
         <h2>hello hows u</h2>
         <h3>some photos i clicked :D</h3>
         <div class="gallery">
-            <img src="assets/clicked/p1.jpg" alt="1" onclick="openLightbox(this)">
-            <img src="assets/clicked/p2.jpg" alt="2" onclick="openLightbox(this)">
-            <img src="assets/clicked/p3.jpg" alt="3" onclick="openLightbox(this)">
-            <img src="assets/clicked/p4.jpg" alt="4" onclick="openLightbox(this)">
-            <img src="assets/clicked/p5.jpg" alt="5" onclick="openLightbox(this)">
-            <img src="assets/clicked/p6.jpg" alt="6" onclick="openLightbox(this)">
-            <img src="assets/clicked/p7.jpg" alt="7" onclick="openLightbox(this)">
-            <img src="assets/clicked/p8.jpg" alt="8" onclick="openLightbox(this)">
+            <img src="assets/clicked/p1.jpg" alt="1" onclick="openLightbox(0)">
+            <img src="assets/clicked/p2.jpg" alt="2" onclick="openLightbox(1)">
+            <img src="assets/clicked/p3.jpg" alt="3" onclick="openLightbox(2)">
+            <img src="assets/clicked/p4.jpg" alt="4" onclick="openLightbox(3)">
+            <img src="assets/clicked/p5.jpg" alt="5" onclick="openLightbox(4)">
+            <img src="assets/clicked/p6.jpg" alt="6" onclick="openLightbox(5)">
+            <img src="assets/clicked/p7.jpg" alt="7" onclick="openLightbox(6)">
+            <img src="assets/clicked/p8.jpg" alt="8" onclick="openLightbox(7)">
         </div>
 
         <br>
         
         <h3>i like to draw portraits</h3>
         <div class="gallery">
-            <img src="assets/art/keanu.jpg" alt="1" onclick="openLightbox(this)">
-            <img src="assets/art/louis_portrait.jpg" alt="3" onclick="openLightbox(this)">
-            <img src="assets/art/matt murdock.jpg" alt="4" onclick="openLightbox(this)">
-            <img src="assets/art/maggie.jpg" alt="5" onclick="openLightbox(this)">
+            <img src="assets/art/keanu.jpg" alt="1" onclick="openLightbox(0)">
+            <img src="assets/art/louis_portrait.jpg" alt="3" onclick="openLightbox(1)">
+            <img src="assets/art/matt murdock.jpg" alt="4" onclick="openLightbox(2)">
+            <img src="assets/art/maggie.jpg" alt="5" onclick="openLightbox(3)">
         </div>
     </section>
 
@@ -60,19 +60,58 @@
     <p>© 2026 Meghna Santra. All rights reserved.</p>
 </footer>
 
-<div id="lightbox" onclick="closeLightbox()">
+<div id="lightbox">
+    <span class="close" onclick="closeLightbox()">×</span>
+
+    <button class="nav prev" onclick="prevImage()">❮</button>
+
     <img id="lightbox-img" alt="Full view">
+
+    <button class="nav next" onclick="nextImage()">❯</button>
 </div>
 
 <script>
-    function openLightbox(img) {
+    let images = [];
+    let currentIndex = 0;
+
+    window.onload = function() {
+        images = Array.from(document.querySelectorAll(".gallery img"));
+    };
+
+    function openLightbox(index) {
+        currentIndex = index;
         document.getElementById("lightbox").style.display = "flex";
-        document.getElementById("lightbox-img").src = img.src;
+        showImage();
+        document.body.style.overflow = "hidden";
+    }
+
+    function showImage() {
+        document.getElementById("lightbox-img").src = images[currentIndex].src;
     }
 
     function closeLightbox() {
         document.getElementById("lightbox").style.display = "none";
+        document.body.style.overflow = "auto";
     }
+
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        showImage();
+    }
+
+    function prevImage() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        showImage();
+    }
+
+    /* keyboard support */
+    document.addEventListener("keydown", function(e) {
+        if (document.getElementById("lightbox").style.display === "flex") {
+            if (e.key === "ArrowRight") nextImage();
+            if (e.key === "ArrowLeft") prevImage();
+            if (e.key === "Escape") closeLightbox();
+        }
+    });
 </script>
 </body>
 </html>
