@@ -85,15 +85,19 @@ section {
 }
 
 .btn {
-    padding: 15px 40px;
+    padding: 10px 25px;
     border-radius: 15px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
     backdrop-filter: blur(6px);
     background: #f1f5f9;
     color: #111;
     transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .btn:hover {
