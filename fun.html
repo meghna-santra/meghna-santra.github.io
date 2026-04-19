@@ -33,26 +33,25 @@
         <h2>hello hows u</h2>
         <h3>some photos i clicked :D</h3>
         <div class="gallery">
-            <img src="assets/clicked/p1.jpg" alt="1">
-            <img src="assets/clicked/p2.jpg" alt="2">
-            <img src="assets/clicked/p3.jpg" alt="3">
-            <img src="assets/clicked/p4.jpg" alt="4">
-            <img src="assets/clicked/p5.jpg" alt="5">
-            <img src="assets/clicked/p6.jpg" alt="6">
-            <img src="assets/clicked/p7.jpg" alt="7">
-            <img src="assets/clicked/p8.jpg" alt="8">
+            <img src="assets/clicked/p1.jpg" alt="1" onclick="openLightbox(this)">
+            <img src="assets/clicked/p2.jpg" alt="2" onclick="openLightbox(this)">
+            <img src="assets/clicked/p3.jpg" alt="3" onclick="openLightbox(this)">
+            <img src="assets/clicked/p4.jpg" alt="4" onclick="openLightbox(this)">
+            <img src="assets/clicked/p5.jpg" alt="5" onclick="openLightbox(this)">
+            <img src="assets/clicked/p6.jpg" alt="6" onclick="openLightbox(this)">
+            <img src="assets/clicked/p7.jpg" alt="7" onclick="openLightbox(this)">
+            <img src="assets/clicked/p8.jpg" alt="8" onclick="openLightbox(this)">
         </div>
 
         <br>
         
         <h3>i like to draw portraits</h3>
         <div class="gallery">
-            <img src="assets/art/keanu.jpg" alt="1">
-            <img src="assets/art/model.jpg" alt="2">
-            <img src="assets/art/eye.jpg" alt="3">
-            <img src="assets/art/louis_portrait.jpg" alt="4">
-            <img src="assets/art/matt murdock.jpg" alt="5">
-            <img src="assets/art/maggie.jpg" alt="6">
+            <img src="assets/art/keanu.jpg" alt="1" onclick="openLightbox(this)">
+            <img src="assets/art/model.jpg" alt="2" onclick="openLightbox(this)">
+            <img src="assets/art/louis_portrait.jpg" alt="3" onclick="openLightbox(this)">
+            <img src="assets/art/matt murdock.jpg" alt="4" onclick="openLightbox(this)">
+            <img src="assets/art/maggie.jpg" alt="5" onclick="openLightbox(this)">
         </div>
     </section>
 
@@ -61,5 +60,20 @@
 <footer class="footer">
     <p>© 2026 Meghna Santra. All rights reserved.</p>
 </footer>
+
+<div id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" alt="Full view">
+</div>
+
+<script>
+    function openLightbox(img) {
+        document.getElementById("lightbox").style.display = "flex";
+        document.getElementById("lightbox-img").src = img.src;
+    }
+
+    function closeLightbox() {
+        document.getElementById("lightbox").style.display = "none";
+    }
+</script>
 </body>
 </html>
