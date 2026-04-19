@@ -98,7 +98,6 @@ section {
     justify-content: center;
     align-items: center;
     text-align: center;
-    white-space: nowrap;
 }
 
 .btn:hover {
@@ -453,9 +452,8 @@ li {
     }
 
     .btn {
-        padding: 8px 14px;
+        padding: 8px 12px;
         font-size: 12px;
-        min-width: 100px;
     }
 
     /* About section */
