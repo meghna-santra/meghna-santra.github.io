@@ -280,8 +280,9 @@ li {
 /* dot */
 .timeline-dot {
     position: absolute;
-    left: 0px;
-    top: 5px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 
     width: 6px;
     height: 6px;
