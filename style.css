@@ -281,10 +281,10 @@ li {
 .timeline-dot {
     position: absolute;
     left: 0px;
-    top: 8px;
+    top: 5px;
 
-    width: 10px;
-    height: 10px;
+    width: 6px;
+    height: 6px;
     background: #101e82;
     border-radius: 50%;
 }
