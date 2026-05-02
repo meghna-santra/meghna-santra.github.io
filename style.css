@@ -201,8 +201,9 @@ a:hover {
 .icon {
     width: 20px;
     height: 20px;
-    stroke: #e6edf3;   /* white */
-    fill: #e6edf3;     /* white */
+
+    stroke: #e6edf3;   /* keep outline white */
+    fill: none;        /* IMPORTANT: don't fill everything */
 }
 
 /* EDUCATION */
