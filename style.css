@@ -299,7 +299,8 @@ a:hover {
 /* MOBILE */
 @media (max-width: 768px) {
     .hero {
-        aspect-ratio: 16 / 9;   /* keeps it proportional */
+        aspect-ratio: 16 / 9;
+        height: auto;   
     }
     
     main {
