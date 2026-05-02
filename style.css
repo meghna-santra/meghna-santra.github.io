@@ -20,10 +20,13 @@ section {
 
 /* HERO should be reference container */
 .hero {
-    height: 350px;
+    width: 100%;
+    
+    /* REMOVE fixed height */
+    height: auto;
 
     background-image: url("./assets/header1.jpg");
-    background-size: cover;
+    background-size: contain;   /* no cropping */
     background-position: center;
     background-repeat: no-repeat;
 
@@ -31,7 +34,7 @@ section {
     align-items: center;
     justify-content: center;
 
-    position: relative; /* IMPORTANT */
+    position: relative;
 }
 
 .hero h1 {
