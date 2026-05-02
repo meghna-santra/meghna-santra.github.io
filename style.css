@@ -283,17 +283,32 @@ a:hover {
     height: 100%;
 
     background: rgba(0, 0, 0, 0.9);
-    display: none;
 
+    display: none;
     justify-content: center;
     align-items: center;
+
     z-index: 999;
+
+    position: fixed; /* ensure reference */
 }
 
 #lightbox img {
     max-width: 90%;
     max-height: 90%;
     border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+
+    z-index: 1001; 
 }
 
 /* MOBILE */
