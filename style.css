@@ -140,7 +140,7 @@ section {
 ========================= */
 
 .landing-section {
-    min-height: auto;
+    min-height: 30vh;
     gap: 20px;
     display: flex;
     align-items: center;
