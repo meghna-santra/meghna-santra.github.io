@@ -208,6 +208,23 @@ toggle.addEventListener("click", () => {
 });
 
 </script>
-    
+<script>
+const menuToggle = document.getElementById("menuToggle");
+const mobileMenu = document.getElementById("mobileMenu");
+
+menuToggle.addEventListener("click", () => {
+
+    mobileMenu.classList.toggle("open");
+
+    if (mobileMenu.classList.contains("open")) {
+        menuToggle.innerHTML =
+            '<i class="fa-solid fa-xmark"></i>';
+    } else {
+        menuToggle.innerHTML =
+            '<i class="fa-solid fa-bars"></i>';
+    }
+
+});
+</script>
 </body>
 </html>
