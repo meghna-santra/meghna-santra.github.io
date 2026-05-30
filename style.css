@@ -621,6 +621,28 @@ h2, h3, h4 {
     color: var(--accent);
 }
 
+.menu-overlay {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0,0,0,0.92);
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity 0.3s ease;
+
+    z-index: 999;
+}
+
+.menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
 .navbar-name a {
 
     font-size: 1.45rem;
@@ -645,11 +667,6 @@ h2, h3, h4 {
 
     gap: 36px;
 }
-
-.home-navbar { 
-   justify-content: space-between; 
-   padding: 0 40px; 
-} 
 
 .navbar-spacer { 
    width: 180px; 
@@ -768,40 +785,34 @@ body,
 
     .section-title,
     .edu-title {
-        text-align: center;
+       text-align: center;
     }
 
     .menu-toggle {
-        display: block;
+       display: block;
     }
 
     .navbar-links {
+       display: none;
 
-        display: none;
+       position: fixed;
 
-        position: absolute;
+       inset: 0;
 
-        top: 70px;
-        right: 0;
+       flex-direction: column;
 
-        width: 220px;
+       justify-content: center;
+       align-items: center;
 
-        background: var(--navbar-bg);
+       gap: 35px;
 
-        flex-direction: column;
+       background: transparent;
 
-        align-items: flex-start;
+       z-index: 1001;
+    }
 
-        gap: 18px;
-
-        padding: 25px;
-
-        border-left: 1px solid var(--border);
-        border-bottom: 1px solid var(--border);
-
-        backdrop-filter: blur(10px);
-
-        z-index: 1001;
+    .navbar-links a {
+       font-size: 1.5rem;
     }
 
     .navbar-links.open {
