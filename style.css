@@ -224,12 +224,16 @@ h2, h3, h4 {
 
 .edu-block {
     margin-top: 10px;
-    padding-left: 124px;
 }
 
 .edu-title {
     font-size: 1rem;
     margin-bottom: 25px;
+}
+
+.education-content {
+    width: 500px;
+    margin-right: auto;
 }
 
 .timeline {
