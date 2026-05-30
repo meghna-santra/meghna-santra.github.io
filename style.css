@@ -212,7 +212,6 @@ a:hover {
     margin-bottom: 35px;
     border-bottom: 1px solid var(--border);
     padding-bottom: 10px;
-    padding-left: 125px;
 }
 
 h2, h3, h4 {
@@ -225,7 +224,7 @@ h2, h3, h4 {
 
 .edu-block {
     margin-top: 10px;
-    padding-left: 125px;
+    padding-left: 124px;
 }
 
 .edu-title {
