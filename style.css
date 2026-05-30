@@ -690,7 +690,7 @@ body,
    MOBILE
 ========================= */
 
-@media (max-width: 800px) {
+@media (max-width:900px) {
 
     main {
         padding: 120px 25px 30px;
@@ -715,12 +715,14 @@ body,
 
         width: 100%;
         max-width: 85vw;
-
         margin: 0 auto;
-
-        text-align: center;
     }
 
+    .landing-text p {
+       text-align: justify;
+       text-justify: inter-word;
+    }
+   
     .landing-text h1 {
         font-size: 2.5rem;
     }
