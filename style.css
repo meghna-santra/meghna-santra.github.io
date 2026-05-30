@@ -150,7 +150,7 @@ section {
 
 .landing-text {
     flex: 1;
-    max-width: 600px;
+    max-width: 500px;
 }
 
 .landing-text h1 {
@@ -178,7 +178,7 @@ section {
 }
 
 .landing-image img {
-    width: 320px;
+    width: 300px;
     max-width: 100%;
 
     border-radius: 10px;
@@ -225,7 +225,6 @@ h2, h3, h4 {
 
 .edu-block {
     margin-top: 10px;
-    max-width: 600px;
 }
 
 .edu-title {
