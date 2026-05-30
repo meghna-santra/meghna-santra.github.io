@@ -702,6 +702,12 @@ h2, h3, h4 {
 
     padding: 0 40px;
 }
+    /* justify-content: space-between;
+
+.navbar-spacer {
+
+    width: 180px;
+} */
 
 .home-navbar .navbar-links {
 
