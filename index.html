@@ -27,7 +27,17 @@
 
     <div class="navbar-inner">
 
-        <div class="navbar-links">
+        <div class="navbar-name">
+            <a href="/">
+                <strong>Meghna</strong> Santra
+            </a>
+        </div>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="navbar-links" id="mobileMenu">
 
             <a href="index.html" class="active">home</a>
             <a href="resume.html">resume</a>
@@ -242,6 +252,24 @@ toggle.addEventListener("click", () => {
 
 });
 
+</script>
+<script>
+const menuToggle = document.getElementById("menuToggle");
+const mobileMenu = document.getElementById("mobileMenu");
+
+menuToggle.addEventListener("click", () => {
+
+    mobileMenu.classList.toggle("open");
+
+    if (mobileMenu.classList.contains("open")) {
+        menuToggle.innerHTML =
+            '<i class="fa-solid fa-xmark"></i>';
+    } else {
+        menuToggle.innerHTML =
+            '<i class="fa-solid fa-bars"></i>';
+    }
+
+});
 </script>
 </body>
 
