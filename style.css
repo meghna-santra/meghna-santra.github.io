@@ -208,9 +208,9 @@ a:hover {
 ========================= */
 
 .section-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 35px;
-
+    padding-left: 130px;
     border-bottom: 1px solid var(--border);
     padding-bottom: 10px;
 }
@@ -225,13 +225,12 @@ h2, h3, h4 {
 
 .edu-block {
     margin-top: 10px;
-    padding-left: 140px;
+    padding-left: 130px;
 }
 
 .edu-title {
     font-size: 1rem;
     margin-bottom: 25px;
-    padding-left: 140px;
 }
 
 .timeline {
