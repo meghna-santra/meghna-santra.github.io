@@ -140,7 +140,7 @@ section {
 ========================= */
 
 .landing-section {
-    min-height: 70vh;
+    min-height: auto;
     gap: 20px;
     display: flex;
     align-items: center;
@@ -225,11 +225,11 @@ h2, h3, h4 {
 ========================= */
 
 .edu-block {
-    margin-top: 25px;
+    margin-top: 10px;
 }
 
 .edu-title {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 25px;
 }
 
