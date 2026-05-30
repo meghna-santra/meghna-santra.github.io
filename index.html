@@ -1,104 +1,132 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Meghna Santra</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <title>Meghna Santra</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
-<header class="hero">
+    <!-- Navigation -->
 
-    <nav class="nav-buttons">
-        <a href="index.html" class="btn active">Home</a>
-        <a href="projects.html" class="btn">Projects</a>
-        <a href="fun.html" class="btn">Fun Stuff</a>
-        <a href="contact.html" class="btn">Contact</a>
-    </nav>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="active">about</a>
+            <a href="resume.html">resume</a>
+            <a href="projects.html">projects</a>
+            <a href="publications.html">publications</a>
+        </nav>
+    </header>
 
-    <div class="overlay"></div>
+    <main>
 
-    <div class="hero-content">
-        <h1>Meghna Santra</h1>
-        <p>
-            <br>
-        </p>
-    </div>
+        <!-- Landing/About Section -->
 
-</header>
-    
-<main>
-<section class="about-section">
+        <section class="landing-section">
 
-    <div class="about-text">
-        <h2>About Me</h2>
+            <div class="landing-text">
 
-        <p>Masters in Physics student passionate about Aerospace Engineering.</p>
+                <h1>
+                    Meghna <span>Santra</span>
+                </h1>
 
-        <p>
-            <strong>My current interests:</strong><br>
-            High Speed Aerodynamics; Flight Mechanics and Control Systems; Astrodynamics.
-        </p>
+                <p>
+                    Hello! I am an Aerospace graduate student at ISAE-ENSMA with a background in Physics.
+                    My interests lie at the intersection of high-speed aerothermodynamics, flight mechanics,
+                    GNC and trajectory optimization.
+                </p>
 
-        <p>
-            <strong>Technical Expertise:</strong><br>
-            Computer-Aided Design (CAD), numerical computation, controller designing, data analysis.
-        </p>
+                <p>
+                    My recent work includes Earth–Moon halo orbit stationkeeping,
+                    orbital dynamics, low-energy transfer trajectories, and the application
+                    of optimal control techniques to spacecraft mission design.
+                </p>
 
-        <p class="cv-link">
-            Find my CV
-            <a href="https://drive.google.com/file/d/1IZ8ktC-pZtB-pfLioRG0ulK-MZ-SX865/view?usp=drive_link" target="_blank">
-                here
-            </a>
-        </p>
-    </div>
+                <p>
+                    I am particularly interested in developing expertise in spacecraft
+                    guidance, navigation and control, astrodynamics, and autonomous
+                    space systems while leveraging my strong foundation in physics,
+                    numerical methods, and computational modeling.
+                </p>
 
-    <div class="about-image">
-        <img src="./assets/profile.jpeg" alt="Meghna Santra">
-    </div>
+                <p>
+                    <strong>Technical Expertise:</strong>
+                    CAD, Numerical Computation, MATLAB, Python,
+                    Control Systems, Data Analysis, and Scientific Computing.
+                </p>
 
-</section>
-    
-<section>
+                <p class="cv-link">
+                    View my CV
+                    <a href="https://drive.google.com/file/d/1IZ8ktC-pZtB-pfLioRG0ulK-MZ-SX865/view?usp=drive_link"
+                        target="_blank">
+                        here
+                    </a>
+                </p>
 
-    <h2 class="section-title">Education</h2>
-
-    <div class="edu-block">
-        <h4 class="edu-title">St. Xavier’s College, Kolkata</h4>
-        
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <p>
-                        <strong>Master of Science, Physics</strong>
-                        <span class="year">(2026)</span>
-                    </p>
-                </div>
             </div>
 
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <p>
-                        <strong>Bachelor of Science (Honours), Physics</strong>
-                        <span class="year">(2024)</span>
-                    </p>
-                </div>
+            <div class="landing-image">
+                <img src="./assets/profile.jpeg" alt="Meghna Santra">
             </div>
 
-        </div>
-    </div>
+        </section>
 
-</section>
+        <!-- Education Section -->
 
-</main>
+        <section>
 
-<footer class="footer">
-    <p>© 2026 Meghna Santra. All rights reserved.</p>
-</footer>
+            <h2 class="section-title">Education</h2>
+
+            <div class="edu-block">
+
+                <h4 class="edu-title">
+                    St. Xavier’s College, Kolkata
+                </h4>
+
+                <div class="timeline">
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-content">
+                            <p>
+                                <strong>Master of Science, Physics</strong>
+                                <span class="year">(2026)</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-content">
+                            <p>
+                                <strong>Bachelor of Science (Honours), Physics</strong>
+                                <span class="year">(2024)</span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Meghna Santra. All rights reserved.</p>
+    </footer>
+
 </body>
+
 </html>
