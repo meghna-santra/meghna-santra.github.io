@@ -135,6 +135,17 @@ section {
     color: var(--accent);
 }
 
+.menu-toggle {
+    display: none;
+
+    background: none;
+    border: none;
+
+    color: var(--text-primary);
+
+    font-size: 1.8rem;
+    cursor: pointer;
+}
 /* =========================
    LANDING SECTION
 ========================= */
@@ -623,9 +634,7 @@ h2, h3, h4 {
     .landing-section {
 
         flex-direction: column-reverse;
-
         text-align: center;
-
         gap: 40px;
     }
 
@@ -637,20 +646,62 @@ h2, h3, h4 {
         width: 260px;
     }
 
+    .menu-toggle {
+        display: block;
+    }
+
     .navbar-links {
+
+        display: none;
+
+        position: absolute;
+
+        top: 70px;
+        right: 0;
+
+        width: 220px;
+
+        background: var(--navbar-bg);
+
+        flex-direction: column;
+
+        align-items: flex-start;
 
         gap: 18px;
 
-        flex-wrap: wrap;
+        padding: 25px;
 
-        justify-content: center;
+        border-left: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+
+        backdrop-filter: blur(10px);
+
+        z-index: 1001;
+    }
+
+    .navbar-links.open {
+        display: flex;
+    }
+
+   .navbar-inner {
+
+        justify-content: space-between;
+
+        padding: 0 20px;
+    }
+
+    .navbar-name {
+
+        flex: 1;
     }
 
     .navbar-name a {
 
-        font-size: 1.25rem;
+        font-size: 1.8rem;
     }
+   
 }
+
 
 @media (max-width: 600px) {
 
@@ -661,14 +712,6 @@ h2, h3, h4 {
     .landing-text p {
         font-size: 1rem;
     }
-
-   .navbar { 
-      gap: 12px;
-   }
-   
-   .navbar a {
-      font-size: 0.85rem;
-   }
 
     .contact-icons {
         gap: 25px;
