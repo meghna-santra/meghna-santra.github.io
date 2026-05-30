@@ -21,16 +21,23 @@
     <!-- NAVBAR -->
 
     <header>
-        <nav class="navbar">
+
+        <nav class="navbar home-navbar">
+
             <a href="index.html" class="active">home</a>
+
             <a href="resume.html">resume</a>
+
             <a href="projects.html">projects</a>
+
             <a href="fun.html">fun stuff</a>
 
             <button id="theme-toggle">
                 <i class="fa-solid fa-sun"></i>
             </button>
+
         </nav>
+
     </header>
 
     <main>
@@ -146,6 +153,53 @@
         <p>© 2026 Meghna Santra. All rights reserved.</p>
     </footer>
 
+<script>
+
+const toggle = document.getElementById("theme-toggle");
+
+const savedTheme =
+    localStorage.getItem("theme") || "dark";
+
+document.documentElement.setAttribute(
+    "data-theme",
+    savedTheme
+);
+
+function updateIcon() {
+
+    toggle.innerHTML =
+        document.documentElement.getAttribute("data-theme") === "dark"
+            ? '<i class="fa-solid fa-sun"></i>'
+            : '<i class="fa-solid fa-moon"></i>';
+}
+
+updateIcon();
+
+toggle.addEventListener("click", () => {
+
+    const current =
+        document.documentElement.getAttribute("data-theme");
+
+    const next =
+        current === "dark"
+            ? "light"
+            : "dark";
+
+    document.documentElement.setAttribute(
+        "data-theme",
+        next
+    );
+
+    localStorage.setItem(
+        "theme",
+        next
+    );
+
+    updateIcon();
+
+});
+
+</script>
 </body>
 
 </html>
