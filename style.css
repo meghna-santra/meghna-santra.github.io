@@ -141,23 +141,23 @@ section {
 
 .landing-section {
     min-height: 45vh;
-    gap: 10px;
     display: flex;
     align-items: flex-start;
-    /* justify-content: space-between; */
-    margin-bottom: 40px;
+    justify-content: center;
+    gap: 80px;
+    margin-bottom: 15px;
 }
 
 .landing-text {
     flex: 1;
-    max-width: 500px;
+    max-width: 600px;
 }
 
 .landing-text h1 {
     font-size: 3.2rem;
     font-weight: 700;
     line-height: 1.1;
-    margin-bottom: 28px;
+    margin-bottom: 22px;
 }
 
 .landing-text h1 span {
@@ -173,16 +173,12 @@ section {
 }
 
 .landing-image {
-    flex: 0.45;
-
-    margin-top: 70px;
-
-    display: flex;
-    justify-content: center;
+    margin-top: 55px;
+    flex: none;
 }
 
 .landing-image img {
-    width: 300px;
+    width: 320px;
     max-width: 100%;
 
     border-radius: 10px;
@@ -229,6 +225,7 @@ h2, h3, h4 {
 
 .edu-block {
     margin-top: 10px;
+    max-width: 600px;
 }
 
 .edu-title {
