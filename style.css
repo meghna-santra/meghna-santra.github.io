@@ -16,7 +16,7 @@
 
     --border: #262626;
 
-    --accent: #2563eb;
+    --accent: #1261A0;
 }
 
 [data-theme="light"] {
@@ -32,7 +32,7 @@
 
     --border: #dddddd;
 
-    --accent: #2563eb;
+    --accent: #1261A0;
 }
 
 * {
