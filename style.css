@@ -10,6 +10,8 @@
     --text-primary: #e6edf3;
     --text-secondary: #d4d4d4;
 
+    --navbar-bg: rgba(15,15,15,0.95);
+
     --card-bg: rgba(255,255,255,0.03);
 
     --border: #262626;
@@ -25,6 +27,7 @@
     --text-primary: #111111;
     --text-secondary: #333333;
 
+    --navbar-bg: rgba(255,255,255,0.95);
     --card-bg: rgba(0,0,0,0.03);
 
     --border: #dddddd;
@@ -95,7 +98,7 @@ section {
     align-items: center;
     gap: 35px;
 
-    background: rgba(15, 15, 15, 0.95);
+    background: var(--navbar-bg);
 
     border-bottom: 1px solid var(--border);
 
@@ -105,7 +108,7 @@ section {
 }
 
 .navbar a {
-    color: #d6d6d6;
+    color: var(--text-primary);
     text-decoration: none;
     font-size: 1rem;
     transition: all 0.3s ease;
@@ -145,12 +148,12 @@ section {
 
 .landing-text h1 span {
     font-weight: 300;
-    color: #cfcfcf;
+    color: var(--text-secondary);
 }
 
 .landing-text p {
     font-size: 1.05rem;
-    color: #d4d4d4;
+    color: var(--text-secondary);
     margin-bottom: 22px;
 }
 
@@ -180,7 +183,7 @@ a {
 }
 
 a:hover {
-    color: #59c9ff;
+    color: var(--accent);
 }
 
 .cv-link {
@@ -195,12 +198,12 @@ a:hover {
     font-size: 2rem;
     margin-bottom: 35px;
 
-    border-bottom: 1px solid #2c2c2c;
+    border-bottom: 1px solid var(--border);
     padding-bottom: 10px;
 }
 
 h2, h3, h4 {
-    color: #ffffff;
+    color: var(--text-primary);
 }
 
 /* =========================
@@ -292,14 +295,13 @@ h2, h3, h4 {
 }
 
 .contact-text {
-
     max-width: 900px;
 
     margin: 0 auto;
 
     font-size: 1.1rem;
 
-    color: #d0d0d0;
+    color: var(--text-secondary);
 }
 
 /* =========================
@@ -333,7 +335,7 @@ h2, h3, h4 {
 
     max-width: 1000px;
 
-    background: rgba(255,255,255,0.03);
+    background: var(--card-bg);
 
     border: 1px solid var(--border);
 
@@ -407,16 +409,15 @@ h2, h3, h4 {
 
 .resume-btn:hover {
     background: var(--accent);
-    color: #111;
+    color: white;
 }
 
 .resume-container {
     width: 100%;
     height: 85vh;
-
+    background: var(--card-bg);
     border: 1px solid var(--border);
     border-radius: 10px;
-
     overflow: hidden;
 }
 
@@ -562,7 +563,7 @@ h2, h3, h4 {
 
     border-top: 1px solid var(--border);
 
-    color: #888;
+    color: var(--text-secondary);
 }
 
 #theme-toggle {
@@ -615,15 +616,30 @@ h2, h3, h4 {
 
         flex-wrap: wrap;
 
+        flex-direction: column;
+
         gap: 18px;
 
         height: auto;
 
-        padding: 15px;
+        padding: 12px;
     }
 
+    .navbar-links {
+
+        gap: 18px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+   
     .navbar a {
         font-size: 0.95rem;
+    }
+
+    .navbar-name a {
+        font-size: 1.4rem;
     }
 }
 
@@ -656,4 +672,59 @@ h2, h3, h4 {
     .contact-text {
         font-size: 1rem;
     }
+}
+
+.navbar-name a {
+
+    text-decoration: none;
+
+    color: var(--text-primary);
+
+    font-size: 1.9rem;
+
+    letter-spacing: -1px;
+}
+
+.navbar-name strong {
+
+    font-weight: 800;
+}
+
+.navbar-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+.home-navbar {
+
+    justify-content: center;
+
+    gap: 35px;
+}
+
+.home-navbar #theme-toggle {
+
+    margin-left: 10px;
+}
+
+body,
+.navbar,
+.project-card,
+.resume-btn,
+.contact-icons a,
+.footer {
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease;
+}
+.project-card,
+.resume-container {
+
+    backdrop-filter: blur(6px);
 }
