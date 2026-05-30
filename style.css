@@ -87,25 +87,23 @@ section {
 ========================= */
 
 .landing-section {
-    min-height: 75vh;
-
+    min-height: 70vh;
+    gap: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    gap: 80px;
 }
 
 .landing-text {
     flex: 1;
-    max-width: 700px;
+    max-width: 620px;
 }
 
 .landing-text h1 {
-    font-size: 4.2rem;
+    font-size: 3.2rem;
     font-weight: 700;
     line-height: 1.1;
-    margin-bottom: 35px;
+    margin-bottom: 28px;
 }
 
 .landing-text h1 span {
@@ -114,9 +112,9 @@ section {
 }
 
 .landing-text p {
-    font-size: 1.15rem;
+    font-size: 1.05rem;
     color: #d4d4d4;
-    margin-bottom: 24px;
+    margin-bottom: 22px;
 }
 
 .landing-image {
