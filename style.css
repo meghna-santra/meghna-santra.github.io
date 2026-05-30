@@ -621,6 +621,71 @@ h2, h3, h4 {
     color: var(--accent);
 }
 
+.navbar-name a {
+
+    font-size: 1.45rem;
+
+    text-decoration: none;
+
+    color: var(--text-primary);
+
+    letter-spacing: -0.5px;
+}
+
+.navbar-name strong {
+
+    font-weight: 800;
+}
+
+.navbar-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 36px;
+}
+
+.home-navbar { 
+   justify-content: space-between; 
+   padding: 0 40px; 
+} 
+
+.navbar-spacer { 
+   width: 180px; 
+} 
+
+.home-navbar .navbar-name {
+    display: none;
+}
+
+.home-navbar .navbar-links { 
+   margin-left: auto; 
+}
+
+
+body,
+.navbar,
+.project-card,
+.resume-btn,
+.contact-icons a,
+.footer {
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+.project-card,
+.resume-container {
+    width: 100%;
+    max-width: none;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+
 /* =========================
    MOBILE
 ========================= */
@@ -683,7 +748,7 @@ h2, h3, h4 {
         display: flex;
     }
 
-   .navbar-inner {
+    .navbar-inner {
 
         justify-content: space-between;
 
@@ -727,67 +792,4 @@ h2, h3, h4 {
     .contact-text {
         font-size: 1rem;
     }
-}
-
-.navbar-name a {
-
-    font-size: 1.45rem;
-
-    text-decoration: none;
-
-    color: var(--text-primary);
-
-    letter-spacing: -0.5px;
-}
-
-.navbar-name strong {
-
-    font-weight: 800;
-}
-
-.navbar-links {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 36px;
-}
-
-.home-navbar { 
-   justify-content: space-between; 
-   padding: 0 40px; 
-} 
-
-.navbar-spacer { 
-   width: 180px; 
-} 
-
-.home-navbar .navbar-name {
-    display: none;
-}
-
-.home-navbar .navbar-links { 
-   margin-left: auto; 
-}
- 
-body,
-.navbar,
-.project-card,
-.resume-btn,
-.contact-icons a,
-.footer {
-
-    transition:
-        background-color 0.3s ease,
-        color 0.3s ease,
-        border-color 0.3s ease,
-        box-shadow 0.3s ease;
-}
-.project-card,
-.resume-container {
-    width: 100%;
-    max-width: none;
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
 }
