@@ -350,8 +350,6 @@ h2, h3, h4 {
 
 .project-card {
 
-    max-width: 1000px;
-
     background: var(--card-bg);
 
     border: 1px solid var(--border);
@@ -729,7 +727,8 @@ body,
 }
 .project-card,
 .resume-container {
-
+    width: 100%;
+    max-width: none;
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
 }
