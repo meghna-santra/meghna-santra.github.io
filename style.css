@@ -225,12 +225,13 @@ h2, h3, h4 {
 
 .edu-block {
     margin-top: 10px;
-    padding-left: 150px;
+    padding-left: 140px;
 }
 
 .edu-title {
     font-size: 1rem;
     margin-bottom: 25px;
+    padding-left: 140px;
 }
 
 .timeline {
