@@ -144,7 +144,7 @@ section {
     gap: 10px;
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin-bottom: 40px;
 }
 
@@ -228,7 +228,7 @@ h2, h3, h4 {
 ========================= */
 
 .edu-block {
-    margin-top: 6px;
+    margin-top: 10px;
 }
 
 .edu-title {
