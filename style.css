@@ -698,17 +698,75 @@ body,
 
     .landing-section {
 
+        display: flex;
         flex-direction: column-reverse;
+
+        align-items: center;
+        justify-content: center;
+
         text-align: center;
+
         gap: 40px;
+
+        width: 100%;
+    }
+
+    .landing-text {
+
+        width: 100%;
+        max-width: 85vw;
+
+        margin: 0 auto;
+
+        text-align: center;
     }
 
     .landing-text h1 {
         font-size: 2.5rem;
     }
 
+    .landing-image {
+
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+
+        margin: 0;
+        padding: 0;
+    }
+
     .landing-image img {
-        width: 240px;
+
+        display: block;
+
+        width: 85vw;
+        max-width: 240px;
+        height: auto;
+
+        margin-left: auto !important;
+        margin-right: auto !important;
+
+        left: auto !important;
+        right: auto !important;
+
+        transform: none !important;
+    }
+
+    .education-content,
+    .resume-content,
+    .projects-content,
+    .fun-content {
+
+        width: 100%;
+        max-width: 85vw;
+
+        margin: 0 auto;
+    }
+
+    .section-title,
+    .edu-title {
+        text-align: center;
     }
 
     .menu-toggle {
@@ -764,12 +822,11 @@ body,
 
         font-size: 1.5rem;
     }
-   
-   .home-navbar .navbar-name {
+
+    .home-navbar .navbar-name {
         display: block;
     }
 }
-
 
 @media (max-width: 600px) {
 
