@@ -690,7 +690,7 @@ body,
    MOBILE
 ========================= */
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
 
     main {
         padding: 120px 25px 30px;
@@ -704,11 +704,11 @@ body,
     }
 
     .landing-text h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .landing-image img {
-        width: 260px;
+        width: 240px;
     }
 
     .menu-toggle {
@@ -762,7 +762,7 @@ body,
 
     .navbar-name a {
 
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
    
    .home-navbar .navbar-name {
@@ -774,11 +774,11 @@ body,
 @media (max-width: 600px) {
 
     .landing-text h1 {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 
     .landing-text p {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .contact-icons {
@@ -786,10 +786,10 @@ body,
     }
 
     .contact-icons a {
-        font-size: 2.3rem;
+        font-size: 1.5rem;
     }
 
     .contact-text {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 }
