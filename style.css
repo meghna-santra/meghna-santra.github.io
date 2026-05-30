@@ -700,6 +700,9 @@ h2, h3, h4 {
         font-size: 1.8rem;
     }
    
+   .home-navbar .navbar-name {
+        display: block;
+    }
 }
 
 
@@ -754,12 +757,15 @@ h2, h3, h4 {
 .home-navbar { 
    justify-content: space-between; 
    padding: 0 40px; 
-   /* padding-right: 300px; */
 } 
 
 .navbar-spacer { 
    width: 180px; 
 } 
+
+.home-navbar .navbar-name {
+    display: none;
+}
 
 .home-navbar .navbar-links { 
    margin-left: auto; 
