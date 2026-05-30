@@ -698,16 +698,8 @@ h2, h3, h4 {
 
 .home-navbar {
 
-    justify-content: flex-end;
-
-    padding: 0 40px;
+    display: flex;
 }
-    /* justify-content: space-between;
-
-.navbar-spacer {
-
-    width: 180px;
-} */
 
 .home-navbar .navbar-links {
 
