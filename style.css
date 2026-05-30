@@ -219,7 +219,7 @@ h2, h3, h4 {
 }
 
 .home-content {
-    max-width: 1050px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -233,7 +233,7 @@ h2, h3, h4 {
 
 .edu-title {
     font-size: 1rem;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
 }
 
 .education-content {
@@ -247,7 +247,7 @@ h2, h3, h4 {
 .timeline-item {
     position: relative;
     padding-left: 28px;
-    margin-bottom: 14px;
+    margin-bottom: 12px;
 }
 
 .timeline-dot {
