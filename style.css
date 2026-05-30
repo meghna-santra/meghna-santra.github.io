@@ -141,7 +141,7 @@ section {
 
 .landing-section {
     min-height: 70vh;
-    gap: 60px;
+    gap: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -165,9 +165,10 @@ section {
 }
 
 .landing-text p {
-    font-size: 1.05rem;
+    font-size: 1rem;
     color: var(--text-secondary);
-    margin-bottom: 22px;
+    margin-bottom: 20px;
+   line-height: 1.5;
 }
 
 .landing-image {
