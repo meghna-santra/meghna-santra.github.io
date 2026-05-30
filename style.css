@@ -74,11 +74,11 @@ body {
 main {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 100px 40px 40px;
+    padding: 120px 40px 40px;
 }
 
 section {
-    margin-bottom: 120px;
+    margin-bottom: 80px;
 }
 
 /* =========================
@@ -145,11 +145,12 @@ section {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    margin-bottom: 40px;
 }
 
 .landing-text {
     flex: 1;
-    max-width: 620px;
+    max-width: 500px;
 }
 
 .landing-text h1 {
@@ -174,7 +175,7 @@ section {
 .landing-image {
     flex: 0.45;
 
-    margin-top: 90px;
+    margin-top: 70px;
 
     display: flex;
     justify-content: center;
