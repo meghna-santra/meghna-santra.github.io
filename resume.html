@@ -4,27 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Resume | Meghna Santra</title>
 
     <link rel="stylesheet" href="style.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet">
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
 
     <header>
+        
         <nav class="navbar">
-            <a href="index.html">home</a>
-            <a href="resume.html" class="active">resume</a>
-            <a href="projects.html">projects</a>
-            <a href="fun.html">fun stuff</a>
+            
+            <div class="navbar-name">
+                <a href="index.html">
+                    <strong>Meghna</strong> Santra
+                </a>
+            </div>
 
-            <button id="theme-toggle">
-                ☀
-            </button>
+            <div class="navbar-links">
+
+                <a href="index.html">home</a>
+
+                <a href="resume.html" class="active">resume</a>
+
+                <a href="projects.html">projects</a>
+
+                <a href="fun.html">fun stuff</a>
+
+                <button id="theme-toggle">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+
+            </div>
+
         </nav>
+
     </header>
 
     <main>
@@ -69,6 +90,53 @@
         <p>© 2026 Meghna Santra. All rights reserved.</p>
     </footer>
 
+<script>
+
+const toggle = document.getElementById("theme-toggle");
+
+const savedTheme =
+    localStorage.getItem("theme") || "dark";
+
+document.documentElement.setAttribute(
+    "data-theme",
+    savedTheme
+);
+
+function updateIcon() {
+
+    toggle.innerHTML =
+        document.documentElement.getAttribute("data-theme") === "dark"
+            ? '<i class="fa-solid fa-sun"></i>'
+            : '<i class="fa-solid fa-moon"></i>';
+}
+
+updateIcon();
+
+toggle.addEventListener("click", () => {
+
+    const current =
+        document.documentElement.getAttribute("data-theme");
+
+    const next =
+        current === "dark"
+            ? "light"
+            : "dark";
+
+    document.documentElement.setAttribute(
+        "data-theme",
+        next
+    );
+
+    localStorage.setItem(
+        "theme",
+        next
+    );
+
+    updateIcon();
+
+});
+
+</script>
 </body>
 
 </html>
