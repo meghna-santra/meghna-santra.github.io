@@ -144,7 +144,7 @@ section {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    gap: 80px;
+    gap: 60px;
     margin-bottom: 15px;
 }
 
@@ -173,12 +173,12 @@ section {
 }
 
 .landing-image {
-    margin-top: 72px;
+    margin-top: 75px;
     flex: none;
 }
 
 .landing-image img {
-    width: 320px;
+    width: 340px;
     max-width: 100%;
 
     border-radius: 10px;
@@ -239,11 +239,11 @@ h2, h3, h4 {
 
 .edu-title {
     font-size: 1rem;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
 }
 
 .education-content {
-    max-width: 500px;
+    max-width: 1000px;
 }
 
 .timeline {
