@@ -696,17 +696,17 @@ h2, h3, h4 {
     gap: 36px;
 }
 
-/* .home-navbar {
+.home-navbar {
 
-    justify-content: center;
+    justify-content: flex-end;
 
-    gap: 35px;
-} */
+    padding: 0 40px;
+}
 
-/* .home-navbar #theme-toggle {
+.home-navbar .navbar-links {
 
-    margin-left: 10px;
-} */
+    margin-left: auto;
+}
  
 body,
 .navbar,
