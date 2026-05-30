@@ -218,6 +218,11 @@ h2, h3, h4 {
     color: var(--text-primary);
 }
 
+.home-content {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
 /* =========================
    EDUCATION
 ========================= */
@@ -232,8 +237,7 @@ h2, h3, h4 {
 }
 
 .education-content {
-    width: 500px;
-    margin-right: auto;
+    max-width: 500px;
 }
 
 .timeline {
