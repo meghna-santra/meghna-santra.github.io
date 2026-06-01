@@ -707,6 +707,10 @@ body,
     -webkit-backdrop-filter: blur(6px);
 }
 
+[data-theme="light"] .menu-overlay {
+    background: rgba(255,255,255,0.65);
+}
+
 
 /* =========================
    MOBILE
@@ -813,7 +817,7 @@ body,
 
        gap: 35px;
 
-       background: rgba(0,0,0,0.96);
+       background: var(--bg-primary);
 
        backdrop-filter: blur(10px);
 
@@ -822,6 +826,7 @@ body,
 
     .navbar-links a {
        font-size: 1.1rem;
+       color: var(--text-primary); 
     }
 
     .navbar-links.open {
@@ -829,9 +834,7 @@ body,
     }
 
     .navbar-inner {
-
         justify-content: space-between;
-
         padding: 0 20px;
     }
 
