@@ -621,6 +621,11 @@ h2, h3, h4 {
     color: var(--accent);
 }
 
+.theme-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
 .menu-overlay {
     position: fixed;
     inset: 0;
@@ -832,8 +837,11 @@ body,
     }
 
     .navbar-name a {
-
         font-size: 1.1rem;
+    }
+
+    .resume-container {
+        height: 70vh;
     }
 
     .home-navbar .navbar-name {
