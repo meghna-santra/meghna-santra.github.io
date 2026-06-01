@@ -757,8 +757,8 @@ body,
 
         display: block;
 
-        width: 120vw;
-        max-width: 240px;
+        width: 240px;
+        max-width: 100%;
         height: auto;
 
         margin-left: auto ;
@@ -788,6 +788,8 @@ body,
 
     .menu-toggle {
        display: block;
+       position: relative;
+       z-index: 1002;
     }
 
     .navbar-links {
@@ -802,9 +804,9 @@ body,
        justify-content: center;
        align-items: center;
 
-       gap: 35px;
+       gap: 25px;
 
-       background: transparent;
+       background: var(--bg-primary);
 
        z-index: 1001;
     }
@@ -847,6 +849,15 @@ body,
 
     .landing-text p {
         font-size: 0.9rem;
+    }
+
+    .resume-buttons {
+        flex-direction: column;
+    }
+
+    .resume-btn {
+        width: 100%;
+        text-align: center;
     }
 
     .contact-icons {
