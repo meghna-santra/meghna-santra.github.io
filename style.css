@@ -739,8 +739,7 @@ body,
     }
 
     .landing-text p {
-       text-align: justify;
-       text-justify: inter-word;
+       text-align: left;
     }
    
     .landing-text h1 {
