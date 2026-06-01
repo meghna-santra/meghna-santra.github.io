@@ -31,7 +31,7 @@
     <div class="navbar-inner">
 
         <div class="navbar-name">
-            <a href="/">
+            <a href="index.html">
                 <strong>Meghna</strong> Santra
             </a>
         </div>
@@ -47,9 +47,11 @@
             <a href="projects.html">projects</a>
             <a href="fun.html" class="active">fun stuff</a>
 
-            <button id="theme-toggle">
-                <i class="fa-solid fa-sun"></i>
-            </button>
+            <div class="theme-wrapper">
+                <button id="theme-toggle">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+            </div>
 
         </div>
 
@@ -165,6 +167,10 @@ document.addEventListener("keydown", function(e) {
 
 <script>
 
+// =========================
+// THEME TOGGLE
+// =========================
+
 const toggle = document.getElementById("theme-toggle");
 
 const savedTheme =
@@ -175,7 +181,7 @@ document.documentElement.setAttribute(
     savedTheme
 );
 
-function updateIcon() {
+function updateThemeIcon() {
 
     toggle.innerHTML =
         document.documentElement.getAttribute("data-theme") === "dark"
@@ -183,7 +189,7 @@ function updateIcon() {
             : '<i class="fa-solid fa-moon"></i>';
 }
 
-updateIcon();
+updateThemeIcon();
 
 toggle.addEventListener("click", () => {
 
@@ -205,28 +211,60 @@ toggle.addEventListener("click", () => {
         next
     );
 
-    updateIcon();
+    updateThemeIcon();
 
 });
 
-</script>
-<script>
+// =========================
+// MOBILE MENU
+// =========================
+
 const menuToggle = document.getElementById("menuToggle");
 const mobileMenu = document.getElementById("mobileMenu");
+const overlay = document.querySelector(".menu-overlay");
 
 menuToggle.addEventListener("click", () => {
 
     mobileMenu.classList.toggle("open");
+    overlay.classList.toggle("active");
 
     if (mobileMenu.classList.contains("open")) {
+
         menuToggle.innerHTML =
             '<i class="fa-solid fa-xmark"></i>';
+
     } else {
+
         menuToggle.innerHTML =
             '<i class="fa-solid fa-bars"></i>';
     }
 
 });
+
+overlay.addEventListener("click", () => {
+
+    mobileMenu.classList.remove("open");
+    overlay.classList.remove("active");
+
+    menuToggle.innerHTML =
+        '<i class="fa-solid fa-bars"></i>';
+
+});
+
+document.querySelectorAll(".navbar-links a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        mobileMenu.classList.remove("open");
+        overlay.classList.remove("active");
+
+        menuToggle.innerHTML =
+            '<i class="fa-solid fa-bars"></i>';
+
+    });
+
+});
+
 </script>
 </body>
 </html>
