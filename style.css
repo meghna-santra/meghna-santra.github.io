@@ -765,17 +765,12 @@ body,
 
         display: block;
 
-        width: 240px;
-        max-width: 100%;
+        width: 85vw;
+        max-width: 85vw;
+
         height: auto;
 
-        margin-left: auto ;
-        margin-right: auto ;
-
-        left: auto ;
-        right: auto ;
-
-        transform: none ;
+        margin: 0 auto;
     }
 
     .education-content,
