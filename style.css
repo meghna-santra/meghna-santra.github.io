@@ -408,7 +408,7 @@ h2, h3, h4 {
 
 .project-affiliation {
 
-    color: var(--accent);
+    color: var(--text-primary);
 
     font-weight: 600;
 
