@@ -244,14 +244,14 @@ h2, h3, h4 {
    margin-right: auto;
 }
 
-.edu-block {
+/*.edu-block {
     margin-top: 10px;
 }
 
 .edu-title {
     font-size: 1rem;
     margin-bottom: 20px;
-}
+} */
 
 .education-content {
     max-width: 1000px;
@@ -259,6 +259,19 @@ h2, h3, h4 {
 
 .timeline {
     position: relative;
+    margin-left: 8px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+
+    left: 3px;
+    top: 12px;
+    bottom: 12px;
+
+    width: 2px;
+    background: var(--border);
 }
 
 .timeline-item {
@@ -284,30 +297,40 @@ h2, h3, h4 {
     margin: 0;
 }
 
-.year {
+/*.year {
     color: var(--accent);
     font-weight: 400;
     margin-left: 8px;
-}
+}*/
 
 .experience-section {
-    margin-top: 80px;
+    margin-top: 10px;
 }
 
+.org-heading {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.edu-degree,
 .exp-title {
-    margin-bottom: 4px;
-    font-size: 1.1rem;
+    margin: 0 0 4px;
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.edu-meta,
+.exp-meta {
+    margin-bottom: 10px;
+    opacity: 0.7;
+    font-size: 0.95rem;
 }
 
 .exp-org {
     margin-bottom: 4px;
     font-weight: 500;
-}
-
-.exp-meta {
-    font-size: 0.95rem;
-    opacity: 0.7;
-    margin-bottom: 10px;
 }
 
 /* =========================
@@ -794,6 +817,7 @@ body,
     }
 
     .education-content,
+    .experience-content,
     .resume-content,
     .projects-content,
     .fun-content {
