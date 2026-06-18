@@ -410,6 +410,11 @@ h2, h3, h4 {
     border-radius: 10px;
 }
 
+.fun-page .project-card {
+    display: block;
+    padding: 25px;
+}
+
 .project-card {
 
     display: flex;
@@ -477,6 +482,24 @@ h2, h3, h4 {
 
 .read-more:hover {
     text-decoration: underline;
+}
+
+
+.fun-card {
+
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 40px;
+}
+
+.fun-card h2 {
+    margin-bottom: 10px;
+}
+
+.fun-card p {
+    margin-bottom: 20px;
 }
 
 /* =========================
