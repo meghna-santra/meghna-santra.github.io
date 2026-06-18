@@ -78,7 +78,7 @@ main {
 }
 
 section {
-    margin-bottom: 90px;
+    margin-bottom: 80px;
 }
 
 /* =========================
@@ -156,7 +156,7 @@ section {
     align-items: flex-start;
     justify-content: center;
     gap: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 70px;
 }
 
 .landing-text {
@@ -263,10 +263,6 @@ h2, h3, h4 {
     margin-bottom: 12px;
 }
 
-.education-content {
-    max-width: 1000px;
-}
-
 .timeline {
     position: relative;
     margin-left: 8px;
@@ -364,6 +360,22 @@ h2, h3, h4 {
     font-weight: 500;
 }
 
+.education-section,
+.experience-section {
+
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.education-section:hover,
+.experience-section:hover {
+
+    border-color: var(--accent);
+
+    box-shadow:
+        0 10px 30px rgba(35,182,255,0.12);
+}
 /* =========================
    CONTACT
 ========================= */
@@ -429,11 +441,6 @@ h2, h3, h4 {
     width: 100%;
     object-fit: cover;
     border-radius: 10px;
-}
-
-.fun-page .project-card {
-    display: block;
-    padding: 25px;
 }
 
 .project-card {
