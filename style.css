@@ -246,12 +246,12 @@ h2, h3, h4 {
 
 /*.edu-block {
     margin-top: 10px;
-}
+}*/
 
 .edu-title {
     font-size: 1rem;
     margin-bottom: 20px;
-} */
+}
 
 .education-content {
     max-width: 1000px;
@@ -280,17 +280,16 @@ h2, h3, h4 {
     margin-bottom: 12px;
 }
 
-.timeline-dot {
+.timeline::before {
+    content: "";
     position: absolute;
 
-    left: 0;
+    left: 3px;
     top: 12px;
+    bottom: 42px;
 
-    width: 8px;
-    height: 8px;
-
-    background: var(--accent);
-    border-radius: 50%;
+    width: 2px;
+    background: var(--border);
 }
 
 .timeline-content p {
@@ -308,7 +307,7 @@ h2, h3, h4 {
 }
 
 .org-heading {
-    font-size: 1.15rem;
+    font-size: 1.0rem;
     font-weight: 600;
     margin-top: 2rem;
     margin-bottom: 0.75rem;
@@ -317,7 +316,7 @@ h2, h3, h4 {
 .edu-degree,
 .exp-title {
     margin: 0 0 4px;
-    font-size: 1.05rem;
+    font-size: 1.0rem;
     font-weight: 600;
 }
 
