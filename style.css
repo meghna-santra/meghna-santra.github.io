@@ -242,6 +242,16 @@ h2, h3, h4 {
    max-width: 1000px;
    margin-left: auto;
    margin-right: auto;
+   background: var(--card-bg);
+
+   border: 1px solid var(--border);
+
+   border-radius: 16px;
+
+   padding: 35px 40px;
+
+   backdrop-filter: blur(6px);
+   -webkit-backdrop-filter: blur(6px);
 }
 
 /*.edu-block {
@@ -326,7 +336,6 @@ h2, h3, h4 {
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
 }
-
 
 
 .org-heading {
