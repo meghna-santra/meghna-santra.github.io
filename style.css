@@ -155,13 +155,13 @@ section {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    gap: 80px;
+    gap: 60px;
     margin-bottom: 70px;
 }
 
 .landing-text {
     flex: 1;
-    max-width: 800px;
+    max-width: 820px;
 }
 
 .landing-text h1 {
@@ -184,7 +184,7 @@ section {
 }
 
 .landing-image {
-    margin-top: 20px;
+    margin-top: 15px;
     flex: none;
 }
 
