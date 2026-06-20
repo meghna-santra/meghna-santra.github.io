@@ -753,7 +753,7 @@ h2, h3, h4 {
     opacity: 0;
     visibility: hidden;
 
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
 
     z-index: 999;
 }
@@ -935,52 +935,51 @@ body,
     }
    
     .navbar-links {
-
-       display: flex;
+        display: flex;
    
-       position: fixed;
+        position: fixed;
    
-       top: 0;
-       left: -80%;
+        top: 0;
+        right: -80%;   /* was left: -80% */
    
-       width: 80%;
-       max-width: 350px;
-       height: 100vh;
+        width: 75%;
+        max-width: 320px;
+        height: 100vh;
    
-       padding: 100px 35px 40px;
+        padding: 100px 35px 40px;
    
-       flex-direction: column;
-       align-items: flex-start;
-       justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
    
-       gap: 0;
+        gap: 8px;
+        overflow-y: auto;
    
-       background: var(--bg-primary);
+        background: var(--bg-primary);
    
-       border-right: 1px solid var(--border);
+        border-left: 1px solid var(--border); /* was border-right */
    
-       transition: left 0.35s ease;
+        transition: right 0.35s ease;
    
-       z-index: 1001;
+        z-index: 1001;
     }
 
     .navbar-links a {
-       font-size: 1.1rem;
-       color: var(--text-primary); 
+        font-size: 1.1rem;
+        color: var(--text-primary); 
     }
 
     .navbar-links a {
-       width: 100%;
-       padding: 18px 0;
-       font-size: 1.15rem;
-       letter-spacing: 0.12em;
-       border-bottom: 1px solid var(--border);
+        width: 100%;
+        padding: 12px 0;
+        font-size: 1.15rem;
+        letter-spacing: 0.08em;
     }
 
     .navbar-links.open {
-       left: 0;
-    }
-
+        right: 0;
+    } 
+   
     .navbar-inner {
         justify-content: space-between;
         padding: 0 20px;
@@ -1000,6 +999,12 @@ body,
 
     .home-navbar .navbar-name {
         display: block;
+    }
+
+    .theme-wrapper {
+        width: 100%;
+        justify-content: flex-start;
+        margin-top: 20px;
     }
 }
 
