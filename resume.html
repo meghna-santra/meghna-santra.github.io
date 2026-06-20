@@ -44,12 +44,6 @@
             <a href="projects.html">Projects</a>
             <a href="fun.html">Gallery</a>
 
-            <div class="theme-wrapper">
-                <button id="theme-toggle">
-                    <i class="fa-solid fa-sun"></i>
-                </button>
-            </div>
-
         </div>
 
     </div>
@@ -85,50 +79,6 @@
     </footer>
 
 <script>
-
-const toggle = document.getElementById("theme-toggle");
-
-const savedTheme =
-    localStorage.getItem("theme") || "dark";
-
-document.documentElement.setAttribute(
-    "data-theme",
-    savedTheme
-);
-
-function updateIcon() {
-
-    toggle.innerHTML =
-        document.documentElement.getAttribute("data-theme") === "dark"
-            ? '<i class="fa-solid fa-sun"></i>'
-            : '<i class="fa-solid fa-moon"></i>';
-}
-
-updateIcon();
-
-toggle.addEventListener("click", () => {
-
-    const current =
-        document.documentElement.getAttribute("data-theme");
-
-    const next =
-        current === "dark"
-            ? "light"
-            : "dark";
-
-    document.documentElement.setAttribute(
-        "data-theme",
-        next
-    );
-
-    localStorage.setItem(
-        "theme",
-        next
-    );
-
-    updateIcon();
-
-});
 
 const menuToggle = document.getElementById("menuToggle");
 const mobileMenu = document.getElementById("mobileMenu");
