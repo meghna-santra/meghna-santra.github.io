@@ -71,7 +71,7 @@ body::before {
 
     inset: 0;
 
-    background-image: url("assets/earth.jpg");
+    background-image: url("assets/back.jpg");
 
     background-size: cover;
     background-position: center;
